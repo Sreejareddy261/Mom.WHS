@@ -1,0 +1,200 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background */
+    color: #333; /* Black text */
+}
+
+.header
+{
+    background-color: #333; /* Black header background */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.container  h1 {
+    font-size: 2rem;
+}
+
+.container  h2 {
+    padding-bottom: 20px;
+}
+
+.container ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.container  a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('flowers.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px 10px 10px; 
+    background-color: rgb(206, 27, 57); /* Peach button background */
+    color: #333; /* Black button text */
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
+.about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.about h3{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.containerwlists {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.containerwlists  h2 {
+    padding-bottom: 20px;
+}
+
+.containerwlists  h3 {
+    padding-bottom: 20px;
+}
+
+.containerwlists ul {
+    list-style: none;
+    padding: 0;
+}
+
+.containerwlists li {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #4CAF50; /* Green service list item color */
+}
+
+.containerwlists  a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.events {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.photos {
+    background-color: #fff; /* White background for the Photos section */
+    padding: 40px 40px;
+}
+
+.photo-gallery {
+    display: flex; /* Use flexbox to arrange images side by side */
+    justify-content: space-between; /* Distribute space evenly between images */
+}
+
+.photo {
+    flex-basis: calc(33.33% - 20px); /* Each photo takes up one-third of the container width with some spacing */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.photo p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .photo-gallery {
+        display: block; /* Change to block-level display for stacking */
+    }
+
+    .photo {
+        flex-basis: 100%; /* Make each photo take the full width of the container */
+        margin: 10px 0; /* Add margin for spacing between stacked photos */
+        text-align: center;
+    }
+
+    .photo img {
+        max-width: 100%; /* Ensure images adjust to screen width */
+        height: auto;
+    }
+
+    .photo p {
+        margin-top: 10px;
+    }
+}
